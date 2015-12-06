@@ -85,12 +85,17 @@ REQUIREMENTS: (--o-- open) (--x-- complete)
  - For apps using relational data, you should try to incorporate an ERD (https://goo.gl/6VyXJ5) which describes the     relationships between models. This can be both a guide to creating the app, as well as a way to keep you on task.
  - A github repo
  - A link to the live site
- - 
+ 
+-------
+
 
 PROGRAMS / FRAMEWORKS USED
  - Skeleton or Materialize
  - Ruby / Rails
  - postgreSQL db
+ - Google street view image API
+
+-------
 
 
 CONCEPT / LAYOUT
@@ -99,19 +104,33 @@ CONCEPT / LAYOUT
  
 
 USER STORIES
-  - user signs up or logs in
   - they see a full broswer image of a messy desktop. There's large WANDER CTA.
   - use clicks 'WANDER' and gets transported somewhere else in the world.
   - there's a thin nav bar including the wander, mark as favorite, profile, and back to reality buttons.
   - clicking the wander button allows the user to continue to see random google 360s
   - clicking mark as favorite allows the user to save the location of the 360 they're on to their profile.
+	 - user must sign up or log in to save favorites (MODALS)
   - clicking profile lets them see their favorites.
   - clicking back to reality brings them back to the messy desktop landing page.
 
 
+-------
+
+MODELS
+ - user
+ 	- username: string
+ 	- password_hash: string
+ 	- favorites:
+
+-------
+
+
 PAGES
-
-
+ - landing page 
+ 	- full browser image of messy computer desktop.
+  - contains buttons to sign-up, login, or wander.
+ 	- wander page full browser image of google 360 view.
+ 	- thin nav bar at top with buttons to continue wandering, save favorite location, view favorites, or sign-up/login. 
 
 BUG TRACK
 
