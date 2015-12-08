@@ -134,6 +134,35 @@ PAGES
 
 BUG TRACK
 
+------
+
+RAILS SETUP
+
+(--o-- open) (--x-- complete) (--ox-- ongoing) (>> = command then command) (=> write in file)
+
+app setup (rails new name_app -d postgresql)
+
+ensure dependencies (bundle install)
+
+add gems (devise, pry-rails)
+
+database create/check (rake db:create >> rails dbconsole)
+
+model create (rails g model Name >> rails g controller names)
+
+update migration files (db/migrate)
+
+create JoinTable migrate (rails g migration CreateJoinTable table_names1 table_names2) …by alpha…
+
+schema migrate/test (rake db:migrate / rails dbconsole)
+
+Test 
+
+Views 
+
+
+
+
 
 
 
