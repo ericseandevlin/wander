@@ -17,3 +17,6 @@
 
 # Ingnore secrets.yml
 /config/secrets.yml
+
+
+/config/api.rb
