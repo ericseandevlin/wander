@@ -8,6 +8,7 @@
 Place.delete_all
 
 places = Place.create([{
+  # Abbey of St Gall Switzerland
   geolocation: '47.422815,9.376468'
   },
   {

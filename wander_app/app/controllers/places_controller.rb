@@ -4,6 +4,7 @@ class PlacesController < ApplicationController
     def index
     #  render text: "index working"
     #  @spot = Place.all
+    @key = GOOGLE_MAPS_API
     end
 
 
