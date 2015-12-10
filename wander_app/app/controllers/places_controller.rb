@@ -2,9 +2,7 @@ class PlacesController < ApplicationController
 
   # INDEX --------------------------
     def index
-    #  render text: "index working"
-    #  @spot = Place.all
-    @key = GOOGLE_MAPS_API
+      @key = google_maps_api
     end
 
 
