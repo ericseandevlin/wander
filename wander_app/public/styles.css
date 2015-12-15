@@ -1,8 +1,13 @@
 body {
-  background-color: rgb(67, 68, 74);
+  background-color: rgb(36, 36, 36);
   /*height: 100%;
   margin: 0;*/
   font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
 }
 
 .navbar {

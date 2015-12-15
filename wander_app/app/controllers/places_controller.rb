@@ -2,16 +2,20 @@ class PlacesController < ApplicationController
 
   # INDEX --------------------------
     def index
-      @key = google_maps_api
+      @key = GOOGLE_MAPS_API
+
+      offset = rand(Place.count)
+      location = Place.offset(offset).first
+
+      @lat = location.lat
+      @lon = location.lon
+
     end
 
 
   # SHOW --------------------------
     def show
      render text: "show working"
-
-
-
     # @neighborhood = Neighborhood.find(params[:id])
     end
 
