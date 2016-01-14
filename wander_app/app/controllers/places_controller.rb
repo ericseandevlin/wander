@@ -7,8 +7,9 @@ class PlacesController < ApplicationController
       offset = rand(Place.count)
       location = Place.offset(offset).first
 
-      @lat = location.lat
-      @lon = location.lon
+      # @lat = location.lat
+      # @lon = location.lon
+      @link = location.link
 
     end
 
